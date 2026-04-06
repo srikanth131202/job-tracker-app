@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-primary-600 text-white font-medium rounded-lg
+           hover:bg-primary-700 focus:outline-none focus:ring-2
+           focus:ring-primary-500 focus:ring-offset-2
+           transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-white text-gray-700 font-medium rounded-lg
+           border border-gray-300 hover:bg-gray-50 focus:outline-none
+           focus:ring-2 focus:ring-primary-500 focus:ring-offset-2
+           transition-colors duration-200;
+  }
+
+  .btn-danger {
+    @apply px-4 py-2 bg-red-600 text-white font-medium rounded-lg
+           hover:bg-red-700 focus:outline-none focus:ring-2
+           focus:ring-red-500 focus:ring-offset-2
+           transition-colors duration-200;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg
+           focus:outline-none focus:ring-2 focus:ring-primary-500
+           focus:border-transparent transition-shadow duration-200;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-200
+           p-6 transition-shadow duration-200 hover:shadow-md;
+  }
+
+  .status-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full
+           text-xs font-medium border;
+  }
+
+  .status-applied {
+    @apply bg-status-applied-bg text-status-applied-text
+           border-status-applied-border;
+  }
+
+  .status-interview {
+    @apply bg-status-interview-bg text-status-interview-text
+           border-status-interview-border;
+  }
+
+  .status-offer {
+    @apply bg-status-offer-bg text-status-offer-text
+           border-status-offer-border;
+  }
+
+  .status-rejected {
+    @apply bg-status-rejected-bg text-status-rejected-text
+           border-status-rejected-border;
+  }
+
+  .status-withdrawn {
+    @apply bg-status-withdrawn-bg text-status-withdrawn-text
+           border-status-withdrawn-border;
+  }
+
+  .stat-card {
+    @apply bg-white rounded-xl p-6 border border-gray-200
+           hover:shadow-md transition-shadow duration-200;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 rounded-full;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full hover:bg-gray-400;
+}
+
+/* Loading spinner */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}

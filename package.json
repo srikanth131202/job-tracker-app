@@ -1,0 +1,31 @@
+{
+  "name": "smart-job-tracker",
+  "version": "1.0.0",
+  "description": "Smart Job Application Tracker with Gmail Automation and AI Parsing",
+  "scripts": {
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "start": "npm run dev",
+    "build": "cd frontend && npm run build",
+    "start:backend": "cd backend && npm start",
+    "setup": "npm run install:all && npm run build"
+  },
+  "keywords": [
+    "job-tracker",
+    "gmail",
+    "ai",
+    "react",
+    "nodejs",
+    "mongodb",
+    "openai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
