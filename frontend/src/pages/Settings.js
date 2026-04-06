@@ -97,12 +97,12 @@ const Settings = () => {
 
   return (
     <Layout>
-      <div className="max-w-3xl mx-auto">
-        <h1 className="text-2xl font-bold text-gray-900 mb-6">Settings</h1>
+      <div className="w-full space-y-6">
+        <h1 className="text-2xl font-bold text-gray-900">Settings</h1>
 
         {/* Message */}
         {message && (
-          <div className={`mb-6 px-4 py-3 rounded-lg ${
+          <div className={`px-4 py-3 rounded-lg ${
             message.type === 'success'
               ? 'bg-green-50 text-green-700'
               : 'bg-red-50 text-red-700'
