@@ -123,7 +123,7 @@ const Layout = ({ children }) => {
       {/* Main Content */}
       <div className="lg:pl-64">
         {/* Top Header */}
-        <header className="sticky top-0 z-30 bg-white border-b border-gray-200 px-4 py-3 sm:px-6 sm:py-3">
+        <header className="sticky top-0 z-30 bg-white border-b border-gray-200 px-4 py-2 sm:px-6 sm:py-2">
           <div className="flex items-center justify-between">
             <button
               onClick={() => setSidebarOpen(true)}
@@ -137,7 +137,7 @@ const Layout = ({ children }) => {
         </header>
 
         {/* Page Content */}
-        <main className="px-3 sm:px-4 py-3 sm:py-4">
+        <main className="px-3 sm:px-4 pt-0 pb-3 sm:pb-4">
           {children}
         </main>
       </div>
